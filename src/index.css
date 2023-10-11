@@ -1,0 +1,65 @@
+:root {
+    --font-family: 'Inter', system-ui, 'Avenir', 'Helvetica', 'Arial', sans-serif;
+    --line-height: 1.5;
+    --font-weight: 400;
+    --text-color-light: rgba(0, 0, 0, 0.87);
+    --background-color-dark: #777777;
+    --background-color-light: #c0c0c0;
+    --link-color: #ffffff;
+    --link-color-hover: #fdfdff;
+}
+
+body {
+    margin: 0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: var(--font-family);
+    line-height: var(--line-height);
+    font-weight: var(--font-weight);
+    background-color: var(--background-color-dark);
+    color: var(--text-color-light);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    flex-direction: column;
+}
+
+a {
+    font-weight: 500;
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-color-hover);
+}
+
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+}
+
+button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #ff5043;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+button:hover {
+    border-color: var(--link-color);
+}
+
+button:focus, button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
